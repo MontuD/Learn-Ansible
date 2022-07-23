@@ -1,1 +1,4 @@
-
+[defaults]
+vars: 
+  aws_access_key: XXXXXXXX
+  aws_secret_key: XXXXXXXX
