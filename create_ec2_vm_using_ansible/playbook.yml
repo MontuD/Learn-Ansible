@@ -1,0 +1,18 @@
+---
+- name : Create EC2 Instance
+  hosts: localhost
+  tasks: 
+   - name: start multiple instances
+     ec2_instance:
+      aws_access_key: XXXXXXXXXXXXXXXXXXXXXXXXXX
+      aws_secret_key: XXXXXXXXXXXXXXXXXXXXXXXXXX
+      instance_type: t2.micro   #( VM size
+      image_id: ami-02329d745a4b9e770 #( Replace Amazon machine image id  make sure you copied from the same ergion you defined below)
+      vpc_subnet_id: subnet-XXXXXXXXXXXX 
+      count: 2 # number of instance
+      region: us-east-1
+      network:
+        assign_public_ip: yes
+      security_group: default
+      tags: 
+         Environment: "Test"
