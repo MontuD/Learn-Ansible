@@ -2,4 +2,4 @@
 My Own Learning by Creating Ansible Playbooks for automatic some general Scenerio in Cloud Infrastructure provisioning and other
 
 
-1. AWS - Create EC2  Machine  using Ansible
+1. AWS - Create EC2  Inctance  using Ansible
